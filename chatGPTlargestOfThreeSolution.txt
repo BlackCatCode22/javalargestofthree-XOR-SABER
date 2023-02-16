@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Get three integers from user
+        System.out.print("Enter first integer: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter second integer: ");
+        int num2 = scanner.nextInt();
+        System.out.print("Enter third integer: ");
+        int num3 = scanner.nextInt();
+        // Determine largest integer
+        int largest = num1;
+        if (num2 > largest) {
+            largest = num2;
+        }
+        if (num3 > largest) {
+            largest = num3;
+        }
+        // Calculate sum of integers
+        int sum = num1 + num2 + num3;
+        // Output results
+        System.out.println("The largest of the three integers is " + largest);
+        System.out.println("The sum of the three integers is " + sum);
+    }
+}
